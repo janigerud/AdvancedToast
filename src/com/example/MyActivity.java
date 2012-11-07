@@ -12,4 +12,11 @@ public class MyActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
     }
+
+    @Override
+    public void onResume(){
+        super.onResume();
+        AdvancedToast at = new AdvancedToast(this);
+        at.makeToast();
+    }
 }
